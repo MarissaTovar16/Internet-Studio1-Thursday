@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Awesome Legendary Dinner Invitation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4f1ea;
+            color: #333;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .guest {
+            margin-bottom: 40px;
+        }
+        .guest img {
+            float: left;
+            margin-right: 20px;
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .menu-section {
+            margin-bottom: 30px;
+        }
+        form {
+            background-color: #fff7f0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 80px;
+        }
+        input[type="submit"] {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #6b4f3b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #5a4032;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1>You're Invited to a Legendary Dinner</h1>
+    <p style="text-align:center;">An exclusive evening of conversation, cuisine, and curiosity with these awesome guests</p>
+
+    <h2>Guests of Honor</h2>
+
+    <div class="guest">
+        <img src="img/rick.png" alt="Rick Sanchez">
+        <h3>Rick Sanchez</h3>
+        <p>Rick Sanchez is not only a genius but also knows how to party and would bring cool gadgets. Though he is cocky and arrogant, he would bring a cool conversation especially if he has been drinking. </p>
+        <div class="clear"></div>
+    </div>
+
+    <div class="guest">
+        <img src="img/mordo and rigby.jpg" alt="Mordecai and Rigby">
+        <h3>Mordecai and Rigby</h3>
+        <p>Modercai and Rigby come as a packaged deal. If I invite one, I have to invite the other. I think some crazy action would take place and honestly, I am down for the side quest adventure.</p>
+        <div class="clear"></div>
+    </div>
+
+    <div class="guest">
+        <img src="img/Image.png" alt="Snoop Dogg">
+        <h3>Snoop Dogg</h3>
+        <p>Snoop Dogg wand Rick Sanchez would engage in not-so-legal aactivities that would spark great conversation and might even persuade Mordecai and Rigby to join in on the fun. I would love to have a "talking" sesh with them.</p>
+        <div class="clear"></div>
+    </div>
+
+    <h2>Evening Menu</h2>
+    <div class="menu-section">
+        <h3>Appetizers</h3>
+        <ul>
+            <li>Mozzy Sticks</li>
+            <li>Chicken Nuggets with Szechuan Sauce</li>
+            <li>Sushi Platter</li>
+        </ul>
+
+        <h3>Main Course</h3>
+        <ul>
+            <li>Fried Chicken</li>
+            <li>Mac n Cheese</li>
+            <li>Serious Pizza</li>
+        </ul>
+
+        <h3>Dessert</h3>
+        <ul>
+            <li>Brookie Cake</li>
+            <li>Tiramisu</li>
+            <li>Ice cream Sundaes</li>
+        </ul>
+    </div>
+
+    <h2>RSVP</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label>Will you be bringing a guest?</label>
+        <input type="radio" id="guestYes" name="bringing_guest" value="Yes">
+        <label for="guestYes">Yes</label>
+        <input type="radio" id="guestNo" name="bringing_guest" value="No">
+        <label for="guestNo">No</label>
+
+        <label for="diet">Dietary Preferences or Restrictions:</label>
+        <textarea id="diet" name="diet"></textarea>
+
+        <input type="submit" value="Submit RSVP">
+    </form>
+</body>
+</html>
