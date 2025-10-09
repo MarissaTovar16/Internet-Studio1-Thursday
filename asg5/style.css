@@ -1,63 +1,75 @@
-h1 {
-  font-family: "BBH Sans Bartle", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  height: 30px;
-}
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #FF013B;
-      background-image: radial-gradient(circle, #e0e0e0 1px, transparent 1px);
-      background-size: 40px 40px;
-      font-family: 'Roboto', sans-serif;
-      color: #444;
-    }
+  body {
+            font-family: 'Lato', sans-serif;
+            background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/symphony.png'); /* Tiled background */
+            color: #333;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
 
-    header {
-      text-align: center;
-      padding: 30px 20px;
-      background-color: #FF4601;
-      color: white;
-      font-family: 'Pacifico', cursive;
-    }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+        }
 
-    img.favorite-image {
-      display: block;
-      margin: 20px auto;
-      max-width: 375px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
+        h1 {
+            color: #722f37; /* Deep wine red */
+        }
 
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #ffffffdd;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
+        p {
+            color: #2f4f4f; /* Dark slate gray */
+        }
 
-    h2 {
-      color: #FF4601;
-  font-family: "Sigmar", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-    }
+        li {
+            color: #5c4033; /* Chocolate brown */
+        }
 
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
-    }
+        .guest {
+            margin-bottom: 40px;
+        }
 
-    .about, .assignments {
-      margin-bottom: 30px;
-    }
+        .guest img {
+            float: left;
+            margin-right: 20px;
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+        }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #666;
-      font-size: 14px;
-    }
+        .menu-section {
+            margin-bottom: 30px;
+        }
+
+        form {
+            background-color: rgba(255, 247, 240, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 80px;
+        }
+
+        input[type="submit"] {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #6b4f3b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #5a4032;
+        }
+
+         .clear {
+            clear: both;
+        }
