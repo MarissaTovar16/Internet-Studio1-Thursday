@@ -3,3 +3,58 @@ h1 {
   font-weight: 400;
   font-style: normal;
 }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f9f7f1;
+      background-image: radial-gradient(circle, #e0e0e0 1px, transparent 1px);
+      background-size: 40px 40px;
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #a3c4f3;
+      color: white;
+      font-family: 'Pacifico', cursive;
+    }
+
+    img.favorite-image {
+      display: block;
+      margin: 20px auto;
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffffdd;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    h2 {
+      color: #667eea;
+      font-family: 'Pacifico', cursive;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .about, .assignments {
+      margin-bottom: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 14px;
+    }
