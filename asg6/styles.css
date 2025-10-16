@@ -1,0 +1,95 @@
+/* 
+      .--..--..--..--..--..--.
+    .' \  (`._   (_)     _   \
+  .'    |  '._)         (_)  |
+  \ _.')\      .----..---.   /
+  |(_.'  |    /    .-\-.  \  |
+  \     0|    |   ( O| O) | o|
+   |  _  |  .--.____.'._.-.  |
+   \ (_) | o         -` .-`  |
+    |    \   |`-._ _ _ _ _\ /
+    \    |   |  `. |_||_|   |
+    | o  |    \_      \     |     -.   .-.
+    |.-.  \     `--..-'   O |     `.`-' .'
+  _.'  .' |     `-.-'      /-.__   ' .-'
+.' `-.` '.|='=.='=.='=.='=|._/_ `-'.'
+`-._  `.  |________/\_____|    `-.'
+   .'   ).| '=' '='\/ '=' |
+   `._.`  '---------------'
+           //___\   //___\
+             ||       ||
+             ||_.-.   ||_.-.
+            (_.--__) (_.--__)
+       
+
+ Insert all your glorious CSS styles below! */
+/* === Base Styles === */
+
+/* Set background pattern image */
+html {
+  background-image: url("redbackground.jpeg");
+  background-repeat: repeat;
+  font-family: 'Open Sans', sans-serif; /* Body font */
+  color: #333;
+  line-height: 1.6; /* Improved paragraph readability */
+}
+
+/* Container to center and pad content */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent to show pattern */
+}
+
+/* === Headings === */
+
+/* h1: Page title */
+h1 {
+  font-family: 'Playfair Display', serif; /* Heading font */
+  font-size: 36px;
+  color: #2c3e50; /* Dark navy */
+  margin-bottom: 0.5em;
+}
+
+/* h2: Section titles */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #16a085; /* Teal */
+  margin-top: 1.5em;
+}
+
+/* h3: Hat titles */
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #2980b9; /* Blue */
+  margin-top: 1em;
+}
+
+/* === Paragraphs === */
+p {
+  font-size: 16px;
+  color: #4d4d4d;
+  line-height: 1.8; /* Line spacing (leading) for readability */
+}
+
+/* === Hat Image === */
+.hat-image {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* === Responsive tweak for small screens === */
+@media (max-width: 600px) {
+  .hat-image {
+    float: none;
+    display: block;
+    margin: 1em auto;
+  }
+}
