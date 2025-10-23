@@ -5,7 +5,7 @@ img {
   display: blocked;
     border-width: 4px;        /* thickness */
   border-style: solid;       /* solid line */
-  border-color: black;       /* border color */
+  border-color: color;       /* border color */
   border-radius: 8px; 
 }
 
