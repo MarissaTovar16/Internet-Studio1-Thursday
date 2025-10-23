@@ -1,0 +1,38 @@
+img {
+  width: 900px;   /* sets smaller width */
+  height: auto;   /* keeps proportions correct */
+  margin: auto;
+  display: blocked;
+    border-width: 4px;        /* thickness */
+  border-style: solid;       /* solid line */
+  border-color: black;       /* border color */
+  border-radius: 8px; 
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+p {
+  border:2px solid white;
+  background-color:  rgba(255, 255, 255, 0.6);
+ border-radius: 8px;
+  font-family: 'Fredoka One', cursive; 
+  font-size: 16px;                     /* adjust size as needed */
+  line-height: 1.6;                    /* improves readability */
+  color: dimgrey;      
+}
+
+body {
+  background-color: rgb(250, 218, 221);
+  text-align: center;
+  background-image:url('softpinkaura.jpg');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+/* Apply the funky font to all headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Luckiest Guy', cursive;   /* funky font */
+  color: #ff69b4;                          /* optional pink color */
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* optional shadow for fun effect */
+}
