@@ -50,11 +50,11 @@ body {
       background-color: #E36414;
       border: solid, thick;
       border-color: #0f4c5c;
-      background-image: url('images/spookyhalloween3.jpg') no-repeat ;
+     /* background-image: url('images/spookyhalloween3.jpg') no-repeat ; */
 }
 
 p, ul {
-  font-size: 1em;
+  font-size: 7em;
   font-family: "Momo Trust Display", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -74,7 +74,7 @@ h1,
   font-family: 'Orelega One', sans-serif;
   font-weight: 700;
   margin-top: 0;
-  font-size: 3.14em;
+  font-size: .20em;
       text-align: center;
       font-color: #0F4C5C;
 }
