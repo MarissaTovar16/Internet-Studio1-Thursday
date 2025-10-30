@@ -48,7 +48,7 @@ body {
   font-weight: false;
   line-height: 1.65;
       background-color: #E36414;
-      border: solid;
+      border: solid, thick;
       border-color: #0f4c5c;
 }
 
