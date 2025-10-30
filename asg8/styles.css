@@ -53,7 +53,7 @@ body {
       background-image: url('images/spookyhalloween3.jpg') ;
 }
 
-p {
+p, ul {
   font-size: 1em;
   font-family: "Momo Trust Display", sans-serif;
   font-weight: 400;
