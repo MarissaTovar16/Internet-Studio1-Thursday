@@ -54,11 +54,11 @@ body {
 }
 
 p, ul {
-  font-size: 7em;
+  font-size: 1em;
   font-family: "Momo Trust Display", sans-serif;
   font-weight: 400;
   font-style: normal;
-            text-align: center;
+text-align: center;
 }
 
 .momo-trust-display-regular {
@@ -74,7 +74,7 @@ h1,
   font-family: 'Orelega One', sans-serif;
   font-weight: 700;
   margin-top: 0;
-  font-size: .20em;
+  font-size: 7em;
       text-align: center;
       font-color: #0F4C5C;
 }
