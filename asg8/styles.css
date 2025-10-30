@@ -58,7 +58,7 @@ p, ul {
   font-weight: 400;
   font-style: normal;
 text-align: center;
-      font-color: 0F4C5C;
+      font-color: 5f0f40;
 }
 
 .momo-trust-display-regular {
@@ -76,7 +76,8 @@ h1,
   margin-top: 0;
   font-size: 3.14em;
       text-align: center;
-      font-color: #0F4C5C;
+      font-color: #0F4C5C
+      font-color: 0f4c5c;;
 }
 
 h2,
@@ -85,14 +86,17 @@ h2,
   font-weight: 700;
   margin-top: 0;
       font-size: 3.16em; 
-              text-align:center;}
+              text-align:center;
+font-color: 0f4c5c;}
 
 h3,
 .text-size-h3 { font-family: 'Orelega One', sans-serif;
   font-weight: 700;
   margin-top: 0;
       font-size: 2.37em;
-              text-align:center;}
+              text-align:center;
+              font-color: 0f4c5c;
+              }
 
 
 
