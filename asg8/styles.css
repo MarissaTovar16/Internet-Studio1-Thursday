@@ -50,6 +50,8 @@ body {
       background-color: #E36414;
       border: solid, thick;
       border-color: #0f4c5c;
+      transform: scale(0.95); /* 95% of original size */
+  transform-origin: top left;
      /* background-image: url('images/spookyhalloween3.jpg') no-repeat ; */
 }
 
