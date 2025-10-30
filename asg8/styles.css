@@ -71,7 +71,9 @@ h1,
   font-family: 'Orelega One', sans-serif;
   font-weight: 700;
   margin-top: 0;
-  font-size: 4.21em;
+  font-size: 3.14em;
+      text-align: center;
+      font-color: #0F4C5C;
 }
 
 h2,
