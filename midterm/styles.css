@@ -1,0 +1,92 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Luckiest Guy', cursive;
+      color: #fff;
+      background: url('https://static.wikia.nocookie.net/adventuretimewithfinnandjake/images/1/10/Land_of_Ooo.png/revision/latest?cb=20121214234737') 
+        no-repeat center center/cover;
+      height: min-height;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    body::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: 0;
+    }
+
+    .container {
+      z-index: 1;
+      max-width: 700px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      animation: fadeIn 2s ease-in;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ffef91;
+      text-shadow: 3px 3px 0px #000;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.4;
+      margin-bottom: 35px;
+      color: #fff8e1;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      background: #ff85d6;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-size: 1.1em;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .buttons a:hover {
+      background: #ffeb3b;
+      color: #333;
+      transform: scale(1.1);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2em; }
+      p { font-size: 1em; }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }

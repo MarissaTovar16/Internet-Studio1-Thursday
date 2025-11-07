@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Land of Ooo</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Fredoka+One&display=swap" rel="stylesheet">
+
+  <style>
+    /* --- General Style --- */
+    body {
+      font-family: 'Fredoka One', sans-serif;
+      font-weight: 400;
+      background: linear-gradient(135deg, #ffa500, #ffcc66);
+
+ /* new pastel color scheme */
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* --- Clouds Background --- */
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .cloud {
+      position: absolute;
+      background: #fff;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: float 60s linear infinite;
+    }
+
+    .cloud::before,
+    .cloud::after {
+      content: '';
+      position: absolute;
+      background: #fff;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .cloud1 { width: 150px; height: 80px; top: 100px; left: -200px; animation-delay: 0s; }
+    .cloud2 { width: 200px; height: 100px; top: 200px; left: -400px; animation-delay: 10s; }
+    .cloud3 { width: 120px; height: 70px; top: 50px; left: -300px; animation-delay: 20s; }
+
+    @keyframes float {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(200vw); }
+    }
+
+    /* --- Header --- */
+    header {
+      background-color: rgba(255, 94, 228, 0.5);/* pastel header */
+      padding: 30px;
+      border-bottom: 6px solid #f6c1c1;
+    }
+
+    header h1 {
+      font-family: 'Luckiest Guy', cursive;
+      color: #fff;
+      font-size: 2.8em;
+      text-shadow: 2px 2px #333;
+      animation: bounceText 2s infinite; /* bounce animation */
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #444;
+    }
+
+    @keyframes bounceText {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-15px); }
+      60% { transform: translateY(-7px); }
+    }
+
+    /* --- Main / Contact Form --- */
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    form.contact-form {
+      background-color: #fef3d8;
+      border: 3px solid #04b5d9;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(255, 165, 0, 0.3);
+      padding: 30px;
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    form.contact-form label {
+      font-weight: bold;
+      text-align: left;
+    }
+
+    form.contact-form input,
+    form.contact-form textarea {
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px solid #ffb347;
+      font-family: 'Fredoka One', sans-serif;
+      font-size: 1em;
+    }
+
+    form.contact-form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    form.contact-form button {
+      background-color: #ff5ee4;
+      color: white;
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 15px;
+      padding: 12px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    form.contact-form button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(255, 111, 97, 0.5);
+    }
+
+    /* --- Footer --- */
+    footer {
+      background-color: rgba(255, 94, 228, 0.5);
+      border-top: 4px solid #f6c1c1;
+      padding: 15px;
+      font-size: 1em;
+      color: #fff;
+      position: relative;
+      margin-top: 40px;
+    }
+         .buttons a {
+      text-decoration: none;
+      background: #ff85d6;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-size: 1.1em;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      margin:10px auto;
+      display:inline-block;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+  </div>
+
+  <header>
+    <h1 class="bounce">Contact Us - Land of Ooo</h1>
+    <p>Have questions? Reach out and let us know!</p>
+    <p><div class="buttons">
+      <a href="index.html">Home</a></p>
+  </header>
+
+  <main>
+    <form class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="phone">Phone #:</label>
+      <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" placeholder="Your message here..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+       <p>   <div class="buttons">
+      <a href="contact.html">Contact Us</a></p>
+      <a >Book Now</a></p>
+      <a> Request Info</a></p>
+  </footer>
+</body>
+</html>

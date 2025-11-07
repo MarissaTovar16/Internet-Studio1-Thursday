@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>getinmybellyyyy</title>
+
+
+  <!-- Google Font: Luckiest Guy -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+  <style>
+    /* --- General Style --- */
+    body {
+      font-family: 'Luckiest Guy', cursive;
+      font-weight: 400;
+      background: linear-gradient(135deg, #ffd580, #ffb347, #ffa500aa);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .cloud {
+      position: absolute;
+      background: #fff;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: float 60s linear infinite;
+    }
+
+    .cloud::before,
+    .cloud::after {
+      content: '';
+      position: absolute;
+      background: #fff;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .cloud1 { width: 150px; height: 80px; top: 100px; left: -200px; animation-delay: 0s; }
+    .cloud2 { width: 200px; height: 100px; top: 200px; left: -400px; animation-delay: 10s; }
+    .cloud3 { width: 120px; height: 70px; top: 50px; left: -300px; animation-delay: 20s; }
+
+    @keyframes float {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(200vw); }
+    }
+
+    header {
+      background-color: #ffa500aa;
+      padding: 30px;
+      border-bottom: 6px solid #ff85a2;
+    }
+
+    header h1 {
+      color: #ff5faf;
+      font-size: 2.8em;
+      text-shadow: 2px 2px #fff;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: white;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      padding: 40px;
+    }
+
+    article.restaurant {
+      background-color: #ffbfed;
+      border: 3px solid #00a5cf;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(255, 120, 0, 0.4);
+      width: 300px;
+      padding: 20px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      position: relative;
+      overflow: hidden;
+    }
+
+    article.restaurant:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(255, 100, 180, 0.4);
+    }
+
+    figure {
+      margin: 0;
+      position: relative;
+    }
+
+    figure img {
+      width: 100%;
+      border-radius: 15px;
+      border: 3px solid #4dd2fa;
+    }
+
+    figcaption {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 8px;
+    }
+
+    article.restaurant h2 {
+      color: #ff5faf;
+      margin-top: 15px;
+      font-size: 1.4em;
+    }
+
+    article.restaurant p {
+      color: #555;
+      font-size: 1em;
+      padding: 10px 0;
+    }
+
+    footer {
+      background-color: #ffa500aa;
+      border-top: 4px solid #ff85a2;
+      padding: 15px;
+      font-size: 1em;
+      color: white;
+      position: relative;
+    }
+      .buttons a {
+      text-decoration: none;
+      background: #ff85d6;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-size: 1.1em;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      margin:10px auto;
+      display:inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+  </div>
+
+  <header>
+    <h1>Restaurants in the Land of Ooo</h1>
+    <p>Enjoy some whacky food maaaan</p>
+    <p><div class="buttons">
+      <a href="index.html">Home</a></p>
+  </header>
+
+  <main>
+    <article class="restaurant">
+      <figure>
+        <img src="images/ckcafe.jpg" alt="Candy Kingdom Restaurant">
+        <figcaption>Candy Kingdom Cafe – Sweet treats for all!</figcaption>
+      </figure>
+      <h2>Candy Kingdom Cafe</h2>
+      <p>Enjoy some royal tarts, jelly beans, Finn cakes, cream puffs, Lemongrab Bars and even more sweets! You can eat everything, even the firt. But don't eat the Candy People!</p>
+    </article>
+
+    <article class="restaurant">
+      <figure>
+        <img src="images/mbp.jpg" alt="Tree Fort Breaky">
+        <figcaption> Makin pancakes, makin bacon pancakes</figcaption>
+      </figure>
+      <h2> Tree Fort Breaky</h2>
+      <p>Eat some delicious breakfast with Finn and Jake at their treehouse, and enjoy jakes awesome tune while he makes ittttt.</p>
+    </article>
+
+    <article class="restaurant">
+      <figure>
+        <img src="images/iceking.jpg" alt="Ice Kingdom Ice Cream">
+        <figcaption>Ice Kingdom Ice Cream and chicken nuggs</figcaption>
+      </figure>
+      <h2>Ice Kingdom Ice Cream</h2>
+      <p>Eat some of the Ice Kings favorite food, animal shaped chicken nuggets! Then enjoy some icecream like dippin dots which are his favorite too.</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>   <div class="buttons">
+      <a href="contact.html">Contact Us</a></p>
+      <a >Book Now</a></p>
+      <a> Request Info</a></p>
+
+  </footer>
+</body>
+</html>

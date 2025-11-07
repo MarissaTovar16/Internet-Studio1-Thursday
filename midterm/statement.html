@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Statement - Land of Ooo</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Fredoka+One&display=swap" rel="stylesheet">
+
+  <style>
+    /* --- General Style --- */
+    body {
+      font-family: 'Fredoka One', sans-serif;
+      background: linear-gradient(135deg, #ff8c00, #ffd580); /* orange gradient */
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* --- Clouds Background --- */
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .cloud {
+      position: absolute;
+      background: #fff;
+      border-radius: 50%;
+      opacity: 0.7;
+      animation: float 60s linear infinite;
+    }
+
+    .cloud::before,
+    .cloud::after {
+      content: '';
+      position: absolute;
+      background: #fff;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .cloud1 { width: 150px; height: 80px; top: 100px; left: -200px; animation-delay: 0s; }
+    .cloud2 { width: 200px; height: 100px; top: 200px; left: -400px; animation-delay: 10s; }
+    .cloud3 { width: 120px; height: 70px; top: 50px; left: -300px; animation-delay: 20s; }
+
+    @keyframes float {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(200vw); }
+    }
+
+    header {
+      background-color: rgba(255, 94, 228, 0.5); /* 0.5 = 50% transparency */
+      padding: 30px;
+      border-bottom: 6px solid #ffcc80;
+    }
+
+    header h1 {
+      font-family: 'Luckiest Guy', cursive;
+      color: #fff;
+      font-size: 2.8em;
+      text-shadow: 2px 2px #333;
+      animation: bounceText 2s infinite;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #444;
+    }
+
+    @keyframes bounceText {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-15px); }
+      60% { transform: translateY(-7px); }
+    }
+
+    main {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+    }
+
+    main h2 {
+      font-family: 'Luckiest Guy', cursive;
+      color: #ff5e00;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    main p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    footer {
+      background-color: #ff9a5e;
+      border-top: 4px solid #ffcc80;
+      padding: 15px;
+      font-size: 1em;
+      color: #fff;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .citation {
+      text-align: left;
+      font-size: 0.95em;
+      margin-top: 40px;
+      color: #333;
+    }
+
+    .citation a {
+      color: #ff5e00;
+      text-decoration: none;
+    }
+
+    .citation a:hover {
+      text-decoration: underline;
+    }
+     .buttons a {
+      text-decoration: none;
+      background: #ff85d6;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-size: 1.1em;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      margin:10px auto;
+      display:inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+  </div>
+
+  <header>
+    <h1 class="bounce">Design Statement - Land of Ooo</h1>
+    <p>my creative visual/interactive decisions</p>
+    <p><div class="buttons">
+      <a href="index.html">Home</a></p>
+  </header>
+
+  <main>
+    <h2>Design Choices</h2>
+    <p>
+     I chose the type faces "Luckiest Guy" and "Fredoka One" because I thought the complimented eachother well. I was going for a cartoony and playful aesthetic and thought those were the best fit because they were fun. I wanted the headers to be Luckiest Guy because they stood out more and were bold. They are fun, yet are still legible for the user. 
+    </p>
+    <p>
+     When I began the home page, I first looked for an Adventure Time background image and came across the one present. I liked the colors becuase they were pastel. I thought I could base the rest of the webpages off of it. It looked both clean and colorful, elements that would be visually pleasing to the eye. I went with the idea of "simple is better" to not over complicate things, especially because I had a lot of trouble and found AI as a necessary friend that helped my find those colors and elements. I repeated the animations on each page to keep it consistent, and switched around colors. The pictures also came from the show.
+    </p>
+    <p>
+      Overall, my design prioritizes both color and creativity for user experience. I made due with my html/css knowledge limitations and became impressed by such a simple design. The combination of playful fonts, bright color gradients, and interactive elements is intended to create a friendly-fun experience that resembles aspects of the show Adventure Time for the user. 
+
+    <div class="citation">
+      <h3>Citations:</h3>
+      <ul>
+        <li><a href="https://www.reddit.com/r/adventuretime/comments/1ixvab6/youre_in_ooo_for_the_day_what_do_you_do_where_do/ " target="_blank">Reddit Adventure Time</a></li>
+        <li><a href="https://htmlcolors.com/hex/333" target="_blank">Hex Colors</a></li>
+        <li><a href="https://adventuretime.fandom.com/wiki/Land_of_Ooo " target="_blank">Adventure Time Wiki</a></li>
+         <li><a href="https://adventuretime.fandom.com/wiki/Animal-shaped_chicken_nuggets 
+" target="_blank">Ice King Fandom Wiki</a></li>
+<li><a href="https://adventuretime.fandom.com/wiki/Princess_Bubblegum" target="_blank">Princess Bubblegum Wiki</a></li>
+<li><a href="https://www.codecademy.com/learn/learn-css/modules/learn-css-box-model/cheatsheet" target="_blank">Codecademy</a></li>
+  <li><a href="https://www.chatgpt.com" target="_blank">Chat GPT</a></li>
+  <li><a href="https://www.google.com/search?q=wheres+some+places+to+eat+in+adventure+time&sca_esv=1d5ae73f0554544d&sxsrf=AE3TifPw8BtqdJAwS6vrDicUldM6pSQSng%3A1762463675296&ei=uw8NaYDfEcL9p84PicOZiAI&ved=2ahUKEwjtz8Levt6QAxXhSDABHUa7OP0Q0NsOegQIAxAB&uact=5&sclient=gws-wiz-serp&udm=50&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ59Aj-dkSgmXWKpa2HWaBZPGTDZtOU71PjDWW70svawaZPXA86-YJdPiXQ6uBNsZwB5b-WQUuKwjyafBxsGakeR2FhjnWhDbTWIbMgjCY-jiKhZYtLu9ppYnvffGkMPhUdgJBsAywz5n0UbjeY9IIZ8wyxs6XiB2WWavNY2ZBtLi6DysVwfJ0mUeIOK03NyLVfTuPwQ&aep=10&ntc=1" target="_blank">Google AI Answer </a></li>
+<li><a href="https://fonts.google.com/selection/embed" target="_blank">Google Fonts</a></li>
+
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+<p>   <div class="buttons">
+      <a href="contact.html">Contact Us</a></p>
+      <a >Book Now</a></p>
+      <a> Request Info</a></p></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit the Land of Ooo!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Luckiest Guy', cursive;
+      color: #fff;
+      background: url('images/looo.png') 
+        no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    body::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: 0;
+    }
+
+    .container {
+      z-index: 1;
+      max-width: 700px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      animation: fadeIn 2s ease-in;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ffeb3b;
+      text-shadow: 3px 3px 0px #000;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.4;
+      margin-bottom: 35px;
+      color: #fff8e1;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      background: #ff85d6;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-size: 1.1em;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .buttons a:hover {
+      background: #ffeb3b;
+      color: #333;
+      transform: scale(1.1);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2em; }
+      p { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Land of Ooo!</h1>
+    <p>
+     The Land of Ooo is home to characters Finn and Jake, and both their friends and foes on the show ADVENTURE TIME. The land is divided into different kingdoms. The most prominent being the Ice Kingdom, the Candy Kingdom, the Earldom of Lemongrab, Wildberry Kingdom, the Fire Kingdom and the Cloud Kingdom. Ooo is a post-apocalyptic version of Earth that resulted from a global disaster called the Mushroom War. Inhabitants consist of diverse, mutated, enhanced, elemental, and sometimes robotic, magical-beings, making the Land of Ooo magical and an adventure itself.
+    </p>
+
+    <div class="buttons">
+      <a href="contact.html">Contact Us</a>
+      <a href="activities.html">Things 2 Do</a>
+      <a href="dining.html">Places to Eat</a>
+      <a href="statement.html">Design</a>
+    </div>
+  </div>
+</body>
+</html>
