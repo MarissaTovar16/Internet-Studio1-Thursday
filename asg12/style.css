@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  border: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 3.815rem;
+   font-family: "BBH Sans Hegarty", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+  font-size: 1.35rem;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  padding:50px;
+  color:white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+}
+
+
+p {
+  font-size: 1rem;
+   font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+h1,
+h2 {
+  text-align: center;
+
+}
+/* Centers the entire gallery on the page */
+.gallery-container {
+    max-width: 900px;         /* keeps the grid nicely contained */
+    margin: 0 auto;           /* centers it horizontally */
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 columns */
+    grid-template-rows: repeat(4, auto);    /* 4 rows */
+    gap: 20px;                /* spacing between boxes */
+}
+
+/* Individual box styling */
+.grid-box {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+    border-color: #ff73b7;
+    border-style:solid;
+}
+
+/* Image styling — scales nicely */
+.grid-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Description text styling */
+.grid-box p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1005%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(252%2c 219%2c 241%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c114 C 57.6%2c132.8 172.8%2c223.2 288%2c208 C 403.2%2c192.8 460.8%2c24.4 576%2c38 C 691.2%2c51.6 748.8%2c271.8 864%2c276 C 979.2%2c280.2 1036.8%2c77.2 1152%2c59 C 1267.2%2c40.8 1382.4%2c159.8 1440%2c185L1440 560L0 560z' fill='rgba(255%2c 196%2c 233%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c459 C 96%2c438.8 288%2c359.6 480%2c358 C 672%2c356.4 768%2c460.2 960%2c451 C 1152%2c441.8 1344%2c339.8 1440%2c312L1440 560L0 560z' fill='rgba(255%2c 160%2c 215%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1005'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e"); ;
+}
+
+
+
+
+
